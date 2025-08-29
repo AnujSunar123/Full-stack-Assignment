@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals - My Portfolio</title>
+    <meta name="description" content="Learn HTML basics with practical examples covering semantic elements, structure, and best practices for web development.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">My Portfolio</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="fullstack.html" class="nav-link">Full Stack</a>
+                    <a href="html.html" class="nav-link active">HTML</a>
+                    <a href="css.html" class="nav-link">CSS</a>
+                    <a href="bootstrap.html" class="nav-link">Bootstrap</a>
+                    <a href="javascript.html" class="nav-link">JavaScript</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1 class="page-title">HTML</h1>
+                <p class="page-subtitle">
+                    HyperText Markup Language - the foundation of every website.
+                </p>
+            </header>
+
+            <div class="hero-card">
+                <h2 class="section-heading">What is HTML?</h2>
+                <p class="content-text">
+                    HTML (HyperText Markup Language) is the standard markup language used to create web pages. 
+                    It describes the structure and content of a webpage using elements and tags. HTML elements 
+                    tell the browser how to display content - whether it's a heading, paragraph, image, link, 
+                    or any other type of content.
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-column">
+                        <h3 class="skill-title">Key HTML Elements:</h3>
+                        <ul class="skill-list">
+                            <li>• <code>&lt;h1&gt; - &lt;h6&gt;</code> Headings</li>
+                            <li>• <code>&lt;p&gt;</code> Paragraphs</li>
+                            <li>• <code>&lt;a&gt;</code> Links</li>
+                            <li>• <code>&lt;img&gt;</code> Images</li>
+                            <li>• <code>&lt;div&gt;</code> Containers</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h3 class="skill-title">Semantic Elements:</h3>
+                        <ul class="skill-list">
+                            <li>• <code>&lt;header&gt;</code> Page header</li>
+                            <li>• <code>&lt;nav&gt;</code> Navigation</li>
+                            <li>• <code>&lt;main&gt;</code> Main content</li>
+                            <li>• <code>&lt;section&gt;</code> Content sections</li>
+                            <li>• <code>&lt;footer&gt;</code> Page footer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">HTML</span>
+                </div>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="about"&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;I'm a web developer passionate about creating 
+               amazing user experiences.&lt;/p&gt;
+            &lt;img src="profile.jpg" alt="Profile picture" width="200"&gt;
+        &lt;/section&gt;
+        
+        &lt;section id="services"&gt;
+            &lt;h2&gt;My Services&lt;/h2&gt;
+            &lt;div&gt;
+                &lt;h3&gt;Web Development&lt;/h3&gt;
+                &lt;p&gt;Custom websites built with modern technologies.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <!-- Changed explanation to bullet points -->
+                <div class="code-explanation">
+                    <h3>Explanation of the Example:</h3>
+                    <ul class="explanation-list">
+                        <li>• The <code>&lt;!DOCTYPE html&gt;</code> defines the document type and version of HTML.</li>
+                        <li>• The <code>&lt;head&gt;</code> section includes metadata like title and character encoding.</li>
+                        <li>• The <code>&lt;body&gt;</code> contains the visible content of the webpage.</li>
+                        <li>• The <code>&lt;header&gt;</code> includes a title and navigation menu.</li>
+                        <li>• The <code>&lt;main&gt;</code> contains structured content using <code>&lt;section&gt;</code>.</li>
+                        <li>• The <code>&lt;footer&gt;</code> displays copyright information.</li>
+                        <li>• Semantic elements improve accessibility and SEO by giving meaning to the content.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

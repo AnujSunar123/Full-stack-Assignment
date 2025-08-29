@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Framework - My Portfolio</title>
+    <meta name="description" content="Learn Bootstrap framework with practical examples showing responsive components and grid system implementation.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">My Portfolio</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="fullstack.html" class="nav-link">Full Stack</a>
+                    <a href="html.html" class="nav-link">HTML</a>
+                    <a href="css.html" class="nav-link">CSS</a>
+                    <a href="bootstrap.html" class="nav-link active">Bootstrap</a>
+                    <a href="javascript.html" class="nav-link">JavaScript</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1 class="page-title">Bootstrap</h1>
+                <p class="page-subtitle">
+                    The world's most popular CSS framework for responsive web development.
+                </p>
+            </header>
+
+            <div class="hero-card">
+                <h2 class="section-heading">What is Bootstrap?</h2>
+                <p class="content-text">
+                    Bootstrap is a powerful, mobile-first CSS framework that provides pre-built components, 
+                    utilities, and a responsive grid system. It allows developers to quickly create 
+                    professional-looking websites without writing extensive custom CSS. Bootstrap includes 
+                    JavaScript components for interactive elements like modals, dropdowns, and carousels.
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-column">
+                        <h3 class="skill-title">Bootstrap Components:</h3>
+                        <ul class="skill-list">
+                            <li>• Navigation bars</li>
+                            <li>• Cards and modals</li>
+                            <li>• Forms and buttons</li>
+                            <li>• Alerts and badges</li>
+                            <li>• Carousel and accordions</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h3 class="skill-title">Key Features:</h3>
+                        <ul class="skill-list">
+                            <li>• Responsive grid system</li>
+                            <li>• Mobile-first approach</li>
+                            <li>• Extensive utility classes</li>
+                            <li>• Customizable themes</li>
+                            <li>• JavaScript plugins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">HTML</span>
+                </div>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Bootstrap Example&lt;/title&gt;
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary"&gt;
+        &lt;div class="container"&gt;
+            &lt;a class="navbar-brand" href="#"&gt;My Portfolio&lt;/a&gt;
+            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"&gt;
+                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                &lt;ul class="navbar-nav ms-auto"&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="#about"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="#projects"&gt;Projects&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;!-- Hero Section --&gt;
+    &lt;div class="container my-5"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-8 mx-auto text-center"&gt;
+                &lt;h1 class="display-4 fw-bold text-primary"&gt;Welcome to My Portfolio&lt;/h1&gt;
+                &lt;p class="lead mb-4"&gt;I create beautiful, responsive websites using modern technologies.&lt;/p&gt;
+                &lt;button class="btn btn-primary btn-lg me-3"&gt;View Projects&lt;/button&gt;
+                &lt;button class="btn btn-outline-primary btn-lg"&gt;Contact Me&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Cards Section --&gt;
+    &lt;div class="container mb-5"&gt;
+        &lt;div class="row g-4"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="card h-100 shadow-sm"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Web Development&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Creating responsive and modern websites with the latest technologies.&lt;/p&gt;
+                        &lt;a href="#" class="btn btn-primary"&gt;Learn More&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Bootstrap JS --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <div class="code-explanation">
+            <h3>Explanation of the Code:</h3>
+            <ul>
+                <li>✅ Includes Bootstrap 5 CSS and JS via CDN for quick setup.</li>
+                <li>🎨 Responsive navigation bar (`navbar`, `navbar-expand-lg`, `bg-primary`) that collapses into a toggle menu on smaller screens.</li>
+                <li>📱 Hero section with Bootstrap utility classes (`container`, `row`, `col-lg-8`, `text-center`) for layout and alignment.</li>
+                <li>✨ Uses typography classes (`display-4`, `fw-bold`, `lead`, etc.) for styled headings and text.</li>
+                <li>🖱️ Buttons styled with Bootstrap classes (`btn`, `btn-primary`, `btn-outline-primary`, `btn-lg`) for consistency.</li>
+                <li>🃏 Card component (`card`, `shadow-sm`, `h-100`) showing Bootstrap’s grid (`row g-4`, `col-md-4`) for responsive design.</li>
+                <li>⚡ No custom CSS required — Bootstrap’s utility classes handle layout, spacing, and responsiveness.</li>
+            </ul>
+        </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
