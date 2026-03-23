@@ -8,69 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- SAME BACKGROUND -->
+    <div class="bg"></div>
+
+    <!-- NAV -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-content">
-                <a href="index.html" class="nav-brand">My Portfolio</a>
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="fullstack.html" class="nav-link">Full Stack</a>
-                    <a href="html.html" class="nav-link">HTML</a>
-                    <a href="css.html" class="nav-link active">CSS</a>
-                    <a href="bootstrap.html" class="nav-link">Bootstrap</a>
-                    <a href="javascript.html" class="nav-link">JavaScript</a>
-                </div>
+            <a href="index.html" class="nav-brand">My Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="fullstack.html">Full Stack</a>
+                <a href="html.html">HTML</a>
+                <a href="css.html" class="active">CSS</a>
+                <a href="bootstrap.html">Bootstrap</a>
+                <a href="javascript.html">JavaScript</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <header class="page-header">
-                <h1 class="page-title">CSS</h1>
-                <p class="page-subtitle">
-                    Cascading Style Sheets - bringing beauty and style to the web.
-                </p>
-            </header>
+    <main class="page-wrapper">
 
-            <div class="hero-card">
-                <h2 class="section-heading">What is CSS?</h2>
-                <p class="content-text">
-                    CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation 
-                    and layout of HTML documents. It allows you to style elements, create layouts, add 
-                    animations, and make websites responsive. CSS separates content from presentation, 
-                    making websites more maintainable and flexible.
-                </p>
-                
-                <div class="skills-grid">
-                    <div class="skill-column">
-                        <h3 class="skill-title">CSS Features:</h3>
-                        <ul class="skill-list">
-                            <li>• Colors and Typography</li>
-                            <li>• Layouts (Flexbox, Grid)</li>
-                            <li>• Animations and Transitions</li>
-                            <li>• Responsive Design</li>
-                            <li>• Pseudo-classes and Elements</li>
-                        </ul>
-                    </div>
-                    <div class="skill-column">
-                        <h3 class="skill-title">Modern CSS:</h3>
-                        <ul class="skill-list">
-                            <li>• CSS Grid and Flexbox</li>
-                            <li>• Custom Properties (Variables)</li>
-                            <li>• Media Queries</li>
-                            <li>• Transform and Filter Effects</li>
-                            <li>• CSS-in-JS Solutions</li>
-                        </ul>
-                    </div>
+        <!-- HEADER -->
+        <section class="page-hero">
+            <h1>CSS</h1>
+            <p>Cascading Style Sheets - bringing beauty and style to the web.</p>
+        </section>
+
+        <!-- CONTENT CARD -->
+        <section class="glass-card">
+
+            <h2>What is CSS?</h2>
+
+            <p>
+                CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation 
+                and layout of HTML documents. It allows you to style elements, create layouts, add 
+                animations, and make websites responsive. CSS separates content from presentation, 
+                making websites more maintainable and flexible.
+            </p>
+
+            <div class="grid-2">
+
+                <div>
+                    <h3>CSS Features:</h3>
+                    <ul>
+                        <li>• Colors and Typography</li>
+                        <li>• Layouts (Flexbox, Grid)</li>
+                        <li>• Animations and Transitions</li>
+                        <li>• Responsive Design</li>
+                        <li>• Pseudo-classes and Elements</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="code-block">
+                <div>
+                    <h3>Modern CSS:</h3>
+                    <ul>
+                        <li>• CSS Grid and Flexbox</li>
+                        <li>• Custom Properties (Variables)</li>
+                        <li>• Media Queries</li>
+                        <li>• Transform and Filter Effects</li>
+                        <li>• CSS-in-JS Solutions</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CODE BLOCK -->
+        <section class="code-wrapper">
+
+            <div class="code-card">
                 <div class="code-header">
-                    <span class="code-language">CSS</span>
+                    <span>CSS Example</span>
                 </div>
                 <pre><code>/* CSS Styling Example */
 
@@ -138,8 +146,10 @@ body {
         padding: 1rem;
     }
 }</code></pre>
-                <div class="code-explanation">
-                   <h3>Explanation of the Code:</h3>
+            </div>
+
+            <div class="glass-card">
+                <h3>Explanation of the Code:</h3>
                 <ul>
                     <li>✅ Uses a CSS reset (`* { box-sizing: border-box; }`) to ensure consistent spacing and sizing across browsers.</li>
                     <li>🎨 Applies a gradient background and clean typography for a modern look.</li>
@@ -149,9 +159,10 @@ body {
                     <li>🃏 Card component styled with shadows, padding, and hover animations for a professional feel.</li>
                 </ul>
             </div>
-        </div>
+
+        </section>
+
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
